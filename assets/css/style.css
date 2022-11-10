@@ -1,0 +1,48 @@
+.section-1{
+    min-width: 1200px;
+    min-height: 800px;
+    background-color:#8701CF;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.section-2{
+    min-width: 1200px;
+    min-height: 800px;
+    background-color: #FF7B29;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo-content{
+    position: absolute;
+    width: 140px;
+    height: 59.17px;
+    left: 76px;
+    top: 29px;
+    background: url(../Logo.png);
+}
+
+.group-s1{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+font-family: Poppins;
+font-size: 80px;
+font-weight: 800;
+line-height: 120px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+
+}
+
+.card{
+     background-image: url(../imagem-04.png); 
+    /* background-image: url("https://gartic.com.br/imgs/mural/su/supersonic_br/um-desenho-qualquer-15.png"); */
+}
