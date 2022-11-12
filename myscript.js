@@ -2,6 +2,7 @@ let validName = false;
 let validEmail = false;
 
   function increment(){
+    event.preventDefault();
     var atual = document.getElementById("total").value;
     var novo = atual - (-1); 
     document.getElementById("total").value = novo;
@@ -9,6 +10,7 @@ let validEmail = false;
   }
   
   function decrement(){
+    event.preventDefault();
     var atual = document.getElementById("total").value;
     if(atual > 0) { 
       var novo = atual - 1;
@@ -35,7 +37,7 @@ let validEmail = false;
     $("#send").click(function(event){
       event.preventDefault();
       $(this).addClass("hidden")
-      $('.success-msg').removeClass("hidden")
+      $('.success-msg-container').removeClass("hidden")
     })
     
     
