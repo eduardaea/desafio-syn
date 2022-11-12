@@ -1,24 +1,6 @@
 let validName = false;
 let validEmail = false;
 
-  function increment(){
-    event.preventDefault();
-    var atual = document.getElementById("total").value;
-    var novo = atual - (-1); 
-    document.getElementById("total").value = novo;
-    
-  }
-  
-  function decrement(){
-    event.preventDefault();
-    var atual = document.getElementById("total").value;
-    if(atual > 0) { 
-      var novo = atual - 1;
-      document.getElementById("total").value = novo;
-    }
-  }
-
- 
   $(document).ready(function(){
     $('.input-name').on('input', function(){
       validateSubmitButton()
@@ -38,6 +20,23 @@ let validEmail = false;
       event.preventDefault();
       $(this).addClass("hidden")
       $('.success-msg-container').removeClass("hidden")
+    })
+
+
+    $("#increment").click(function(event){
+      event.preventDefault();
+      var atual = document.getElementById("total").value;
+      var novo = atual - (-1); 
+      document.getElementById("total").value = novo;
+    })
+
+    $("#decrement").click(function(event){
+      event.preventDefault();
+      var atual = document.getElementById("total").value;
+      if(atual > 0) { 
+        var novo = atual - 1;
+        document.getElementById("total").value = novo;
+      }
     })
     
     
